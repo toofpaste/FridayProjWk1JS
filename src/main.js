@@ -18,7 +18,10 @@ $(document).ready(function() {
     let yearCount = ageCount.getYear();
     let trueAge = ageCount.getAge(dayCount, monthCount, yearCount);
     $("#result").text(ageCount.printAge(trueAge));
-
+    $("#result1").text(ageCount.printAgeMer(trueAge));
+    $("#result2").text(ageCount.printAgeVenus(trueAge));
+    $("#result3").text(ageCount.printAgeMars(trueAge));
+    $("#result4").text(ageCount.printAgeJupiter(trueAge));
 
     event.preventDefault();
   });
