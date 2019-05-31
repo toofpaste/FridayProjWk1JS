@@ -8,6 +8,9 @@ $(document).ready(function() {
   $("#birthdate").submit(function(event){
     //shows in year-month-day
     let birthday = $("#bDate").val();
+    let mf = $("#malefemale").val();
+    let life = parseInt($("#country").val());
+    console.log(life);
     let dateHold = birthday.split("-");
     let year = parseInt(dateHold[0]);
     let month = parseInt(dateHold[1]);
