@@ -1,8 +1,15 @@
 export class SpaceCalc{
-  constructor(year, month, day) {
+  constructor(year, month, day, mf, life) {
     this.year = year;
     this.month = month;
     this.day = day;
+    this.mf = mf;
+    this.life = life;
+  }
+  getLife(age){
+    if(age >= this.life){
+      return "You have outlived your countries life expectancy by " + (age - this.life) + " years. Age expectancy in your country is " + this.life + " years";
+    }else return "You have " + (this.life - age) + " years left to live. Age expectancy in your country is " + this.life + " years";
   }
   getDays(){
     const currentDay = 31;

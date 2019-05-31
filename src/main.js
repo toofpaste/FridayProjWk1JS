@@ -10,12 +10,11 @@ $(document).ready(function() {
     let birthday = $("#bDate").val();
     let mf = $("#malefemale").val();
     let life = parseInt($("#country").val());
-    console.log(life);
     let dateHold = birthday.split("-");
     let year = parseInt(dateHold[0]);
     let month = parseInt(dateHold[1]);
     let day = parseInt(dateHold[2]);
-    let ageCount = new SpaceCalc(year, month, day);
+    let ageCount = new SpaceCalc(year, month, day, mf, life);
     let dayCount = ageCount.getDays();
     let monthCount = ageCount.getMonth();
     let yearCount = ageCount.getYear();
@@ -25,6 +24,7 @@ $(document).ready(function() {
     $("#result2").text(ageCount.printAgeVenus(trueAge));
     $("#result3").text(ageCount.printAgeMars(trueAge));
     $("#result4").text(ageCount.printAgeJupiter(trueAge));
+    $("#death").text(ageCount.getLife(trueAge));
 
     event.preventDefault();
   });
