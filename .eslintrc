@@ -8,7 +8,9 @@
     "es6": true,
     "browser": true,
     "jquery": true,
-    "amd": true
+    "node": true,
+    "amd": true,
+    "jasmine": true
   },
   "rules": {
     "semi": 1,

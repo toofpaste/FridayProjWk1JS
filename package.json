@@ -8,7 +8,8 @@
     "start": "webpack-dev-server --open --mode development",
     "watch": "webpack --watch",
     "lint": "eslint src/*.js",
-    "lintFixMain": "eslint --fix src/main.js"
+    "lintFixMain": "eslint --fix src/main.js",
+    "lintFixSpace": "eslint --fix src/SpaceAge.js"
   },
   "repository": {
     "type": "git"
